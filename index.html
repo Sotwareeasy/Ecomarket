@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMarket — Compra responsable, vive sostenible</title>
+  <meta name="description" content="EcoMarket: tienda en línea de productos ecológicos, reutilizables y sustentables.">
+  <link rel="icon" href="img/icons/icon-leaf.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="container header__bar">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-mark" aria-hidden="true"></span>
+        EcoMarket
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Inicio</a></li>
+          <li><a href="views/productos.html" class="nav__link">Productos</a></li>
+          <li><a href="views/sobre-nosotros.html" class="nav__link">Nosotros</a></li>
+          <li><a href="views/contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="views/productos.html" class="icon-btn" aria-label="Buscar productos">🔍</a>
+        <a href="#carrito" class="icon-btn" aria-label="Ver carrito">🛒</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero__text">
+        <span class="eyebrow hero__eyebrow">Nueva colección consciente</span>
+        <h1 class="hero__title">Compra responsable,<br><em>vive sostenible</em></h1>
+        <p class="hero__lead">Productos reutilizables, libres de plástico y de origen ético para tu día a día. Pequeños cambios, gran impacto.</p>
+        <a href="views/productos.html" class="btn btn--primary">Explorar productos</a>
+      </div>
+      <div class="hero__media">
+        <img src="img/hero/hero-banner.svg" alt="Ilustración de un paisaje verde y sostenible">
+      </div>
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS -->
+    <section class="section container" id="destacados">
+      <div class="section-heading text-center">
+        <span class="eyebrow">Lo más querido</span>
+        <h2>Productos destacados</h2>
+        <p>Una selección de nuestros favoritos, elegidos por su bajo impacto y alta durabilidad.</p>
+      </div>
+
+      <div class="product-grid product-grid--home">
+        <article class="card">
+          <div class="card__media"><img src="img/products/product-bottle.svg" alt="Botella reutilizable de acero inoxidable"></div>
+          <div class="card__body">
+            <h3 class="card__title">Botella reutilizable</h3>
+            <p class="card__desc">Acero inoxidable, mantiene la temperatura por 12 horas.</p>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">$68.000</span>
+            <a href="views/productos.html" class="btn btn--outline btn--small">Ver más</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media"><img src="img/products/product-tote.svg" alt="Bolsa tote de algodón orgánico"></div>
+          <div class="card__body">
+            <h3 class="card__title">Tote bag de algodón</h3>
+            <p class="card__desc">Algodón 100% orgánico, resistente hasta 15kg.</p>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">$32.000</span>
+            <a href="views/productos.html" class="btn btn--outline btn--small">Ver más</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media"><img src="img/products/product-brush.svg" alt="Cepillo dental de bambú"></div>
+          <div class="card__body">
+            <h3 class="card__title">Cepillo de bambú</h3>
+            <p class="card__desc">Mango biodegradable y cerdas suaves veganas.</p>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">$12.500</span>
+            <a href="views/productos.html" class="btn btn--outline btn--small">Ver más</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media"><img src="img/products/product-soap.svg" alt="Jabón artesanal en barra"></div>
+          <div class="card__body">
+            <h3 class="card__title">Jabón artesanal</h3>
+            <p class="card__desc">Sin empaque plástico, ingredientes naturales.</p>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">$15.900</span>
+            <a href="views/productos.html" class="btn btn--outline btn--small">Ver más</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media"><img src="img/products/product-wrap.svg" alt="Envoltura de cera de abeja"></div>
+          <div class="card__body">
+            <h3 class="card__title">Wraps de cera de abeja</h3>
+            <p class="card__desc">Alternativa reutilizable al plástico film.</p>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">$28.000</span>
+            <a href="views/productos.html" class="btn btn--outline btn--small">Ver más</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media"><img src="img/products/product-comb.svg" alt="Peine de madera natural"></div>
+          <div class="card__body">
+            <h3 class="card__title">Peine de madera</h3>
+            <p class="card__desc">Madera de bambú tratada, antiestático.</p>
+          </div>
+          <div class="card__footer">
+            <span class="card__price">$9.800</span>
+            <a href="views/productos.html" class="btn btn--outline btn--small">Ver más</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FRANJA DE PRINCIPIOS -->
+    <section class="section section--muted">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="eyebrow">Nuestro compromiso</span>
+          <h2>Sostenibilidad en cada detalle</h2>
+        </div>
+        <div class="principles">
+          <div class="principle">
+            <img class="principle__icon" src="img/icons/icon-no-plastic.svg" alt="">
+            <h3>Sin plástico</h3>
+            <p>Empaques 100% compostables o reutilizables.</p>
+          </div>
+          <div class="principle">
+            <img class="principle__icon" src="img/icons/icon-fair-trade.svg" alt="">
+            <h3>Comercio justo</h3>
+            <p>Alianzas directas con productores locales.</p>
+          </div>
+          <div class="principle">
+            <img class="principle__icon" src="img/icons/icon-recycle.svg" alt="">
+            <h3>Economía circular</h3>
+            <p>Productos diseñados para durar y reciclarse.</p>
+          </div>
+          <div class="principle">
+            <img class="principle__icon" src="img/icons/icon-water.svg" alt="">
+            <h3>Bajo impacto hídrico</h3>
+            <p>Procesos productivos que cuidan el agua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <p class="footer__brand">EcoMarket</p>
+        <p>Productos ecológicos para un consumo más consciente y responsable.</p>
+        <div class="footer__social">
+          <a href="#" class="icon-btn" aria-label="Instagram">IG</a>
+          <a href="#" class="icon-btn" aria-label="Facebook">FB</a>
+          <a href="#" class="icon-btn" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>hola@ecomarket.com</li>
+          <li>+57 300 000 0000</li>
+          <li>Bucaramanga, Colombia</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Envíos y devoluciones</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="views/productos.html">Catálogo</a></li>
+          <li><a href="views/sobre-nosotros.html">Nuestra historia</a></li>
+          <li><a href="views/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 EcoMarket. Todos los derechos reservados.</div>
+  </footer>
+</body>
+</html>
