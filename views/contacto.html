@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — EcoMarket</title>
+  <meta name="description" content="Comunícate con EcoMarket: formulario de contacto, ubicación y redes sociales.">
+  <link rel="icon" href="../img/icons/icon-leaf.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="container header__bar">
+      <a href="../index.html" class="header__logo">
+        <span class="header__logo-mark" aria-hidden="true"></span>
+        EcoMarket
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li><a href="productos.html" class="nav__link">Productos</a></li>
+          <li><a href="sobre-nosotros.html" class="nav__link">Nosotros</a></li>
+          <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="productos.html" class="icon-btn" aria-label="Buscar productos">🔍</a>
+        <a href="#carrito" class="icon-btn" aria-label="Ver carrito">🛒</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section container">
+      <div class="section-heading">
+        <span class="eyebrow">Hablemos</span>
+        <h1>Contáctanos</h1>
+        <p>¿Tienes preguntas sobre un producto o quieres proponer una alianza? Escríbenos.</p>
+      </div>
+
+      <div class="contact-layout">
+        <form class="contact-form" novalidate>
+          <div class="form-field">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required minlength="3">
+            <span class="form-hint">Mínimo 3 caracteres.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+            <span class="form-hint">Usaremos este correo para responderte.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos en qué podemos ayudarte" required minlength="10"></textarea>
+            <span class="form-hint">Mínimo 10 caracteres.</span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block">Enviar mensaje</button>
+        </form>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <h4>Oficina principal</h4>
+            <p>Cra 27 # 45-10, Bucaramanga, Santander, Colombia</p>
+          </div>
+          <div class="info-card">
+            <h4>Correo y teléfono</h4>
+            <p>hola@ecomarket.com · +57 300 000 0000</p>
+          </div>
+          <div class="info-card">
+            <h4>Horario de atención</h4>
+            <p>Lunes a viernes, 8:00 a.m. – 6:00 p.m.</p>
+          </div>
+          <div class="info-card">
+            <h4>Síguenos</h4>
+            <div class="social-row" style="margin-top: var(--space-2);">
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="Facebook">FB</a>
+              <a href="#" aria-label="TikTok">TK</a>
+              <a href="#" aria-label="WhatsApp">WA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="eyebrow">Encuéntranos</span>
+          <h2>Nuestra ubicación</h2>
+        </div>
+        <div class="info-card" style="padding: var(--space-2); max-width: 900px; margin-inline: auto;">
+          <img src="../img/icons/map.svg" alt="Mapa estilizado con la ubicación de la oficina de EcoMarket" style="border-radius: 10px;">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <p class="footer__brand">EcoMarket</p>
+        <p>Productos ecológicos para un consumo más consciente y responsable.</p>
+        <div class="footer__social">
+          <a href="#" class="icon-btn" aria-label="Instagram">IG</a>
+          <a href="#" class="icon-btn" aria-label="Facebook">FB</a>
+          <a href="#" class="icon-btn" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>hola@ecomarket.com</li>
+          <li>+57 300 000 0000</li>
+          <li>Bucaramanga, Colombia</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Envíos y devoluciones</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="productos.html">Catálogo</a></li>
+          <li><a href="sobre-nosotros.html">Nuestra historia</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 EcoMarket. Todos los derechos reservados.</div>
+  </footer>
+</body>
+</html>
