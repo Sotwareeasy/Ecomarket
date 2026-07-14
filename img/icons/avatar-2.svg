@@ -1,0 +1,5 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Foto de cliente 2">
+<rect width="120" height="120" rx="60" fill="#8bc99b"/>
+<circle cx="60" cy="48" r="22" fill="#fff" opacity="0.9"/>
+<path d="M20 110 a40 40 0 0 1 80 0 z" fill="#fff" opacity="0.9"/>
+</svg>

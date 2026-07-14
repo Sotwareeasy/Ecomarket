@@ -1,0 +1,5 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Producto ecológico: popotes">
+  <rect width="240" height="240" rx="24" fill="#F5F5DC"/>
+  <circle cx="120" cy="120" r="95" fill="#E6EEDD"/>
+  <rect x="80" y="40" width="8" height="150" rx="4" fill="#5fae74" opacity="0.6"/><rect x="96" y="40" width="8" height="150" rx="4" fill="#5fae74" opacity="0.7"/><rect x="112" y="40" width="8" height="150" rx="4" fill="#5fae74" opacity="0.8"/><rect x="128" y="40" width="8" height="150" rx="4" fill="#5fae74" opacity="0.9"/><rect x="144" y="40" width="8" height="150" rx="4" fill="#5fae74" opacity="1.0"/>
+</svg>

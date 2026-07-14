@@ -1,0 +1,6 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Producto ecológico: cepillo">
+  <rect width="240" height="240" rx="24" fill="#F5F5DC"/>
+  <circle cx="120" cy="120" r="95" fill="#E6EEDD"/>
+  <rect x="115" y="40" width="10" height="140" rx="5" fill="#D9C7A3"/>
+<rect x="90" y="30" width="60" height="22" rx="10" fill="#6fbf73"/>
+</svg>

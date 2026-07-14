@@ -1,0 +1,6 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Producto ecológico: canasta">
+  <rect width="240" height="240" rx="24" fill="#F5F5DC"/>
+  <circle cx="120" cy="120" r="95" fill="#E6EEDD"/>
+  <path d="M70 100 h100 l-15 90 a10 10 0 0 1 -10 8 h-50 a10 10 0 0 1 -10 -8 z" fill="#7fb98a"/>
+<path d="M85 100 v-15 a35 35 0 0 1 70 0 v15" fill="none" stroke="#1F5A38" stroke-width="8"/>
+</svg>
