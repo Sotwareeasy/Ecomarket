@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros — EcoMarket</title>
+  <meta name="description" content="Conoce la historia, misión y valores de EcoMarket.">
+  <link rel="icon" href="../img/icons/icon-leaf.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <header class="header">
+    <div class="container header__bar">
+      <a href="../index.html" class="header__logo">
+        <span class="header__logo-mark" aria-hidden="true"></span>
+        EcoMarket
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="../index.html" class="nav__link">Inicio</a></li>
+          <li><a href="productos.html" class="nav__link">Productos</a></li>
+          <li><a href="sobre-nosotros.html" class="nav__link">Nosotros</a></li>
+          <li><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="productos.html" class="icon-btn" aria-label="Buscar productos">🔍</a>
+        <a href="#carrito" class="icon-btn" aria-label="Ver carrito">🛒</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HISTORIA -->
+    <section class="section container">
+      <div class="story">
+        <div class="story__media">
+          <img src="../img/hero/hero-banner.svg" alt="Ilustración del origen de EcoMarket en el campo">
+        </div>
+        <div class="story__text">
+          <span class="eyebrow">Nuestra historia</span>
+          <h2>De una huerta familiar a un mercado consciente</h2>
+          <p>EcoMarket nació en 2021 de una pregunta simple: ¿por qué comprar responsable seguía siendo tan difícil? Empezamos como un pequeño puesto de productos reutilizables entre amigos y hoy conectamos a cientos de artesanos y talleres con personas que quieren consumir distinto.</p>
+          <p>Cada producto que vendemos pasa por un filtro de tres preguntas: ¿reduce residuos?, ¿es duradero?, ¿fue hecho con condiciones justas? Si la respuesta no es sí a las tres, no entra al catálogo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINCIPIOS -->
+    <section class="section section--muted">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="eyebrow">Lo que nos guía</span>
+          <h2>Principios ecológicos</h2>
+        </div>
+        <div class="principles">
+          <div class="principle">
+            <img class="principle__icon" src="../img/icons/icon-no-plastic.svg" alt="">
+            <h3>Sin plástico</h3>
+            <p>Cero plástico de un solo uso en empaques y productos.</p>
+          </div>
+          <div class="principle">
+            <img class="principle__icon" src="../img/icons/icon-fair-trade.svg" alt="">
+            <h3>Comercio justo</h3>
+            <p>Pagamos precios justos directamente a productores.</p>
+          </div>
+          <div class="principle">
+            <img class="principle__icon" src="../img/icons/icon-local.svg" alt="">
+            <h3>Producción local</h3>
+            <p>Priorizamos talleres y cooperativas de la región.</p>
+          </div>
+          <div class="principle">
+            <img class="principle__icon" src="../img/icons/icon-recycle.svg" alt="">
+            <h3>Economía circular</h3>
+            <p>Diseño pensado para reparar, reusar y reciclar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS (carrusel CSS con scroll-snap) -->
+    <section class="section container">
+      <div class="section-heading text-center">
+        <span class="eyebrow">Voces de la comunidad</span>
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p>Desliza para conocer algunas experiencias reales de quienes ya viven más sostenible.</p>
+      </div>
+
+      <div class="carousel" tabindex="0" aria-label="Carrusel de testimonios, desliza horizontalmente">
+        <article class="testimonial">
+          <div class="testimonial__head">
+            <div class="testimonial__avatar"><img src="../img/icons/avatar-1.svg" alt="" width="52" height="52"></div>
+            <div>
+              <p class="testimonial__name">Laura M.</p>
+              <p class="testimonial__role">Cliente desde 2022</p>
+            </div>
+          </div>
+          <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+          <p>Cambié todos mis productos de baño por los de EcoMarket. La calidad no tiene nada que envidiarle a las marcas tradicionales.</p>
+        </article>
+
+        <article class="testimonial">
+          <div class="testimonial__head">
+            <div class="testimonial__avatar"><img src="../img/icons/avatar-2.svg" alt="" width="52" height="52"></div>
+            <div>
+              <p class="testimonial__name">Daniel R.</p>
+              <p class="testimonial__role">Cliente desde 2023</p>
+            </div>
+          </div>
+          <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+          <p>Me encanta poder rastrear de dónde viene cada producto. Se nota que hay un trabajo real detrás de cada alianza.</p>
+        </article>
+
+        <article class="testimonial">
+          <div class="testimonial__head">
+            <div class="testimonial__avatar"><img src="../img/icons/avatar-3.svg" alt="" width="52" height="52"></div>
+            <div>
+              <p class="testimonial__name">Camila T.</p>
+              <p class="testimonial__role">Cliente desde 2021</p>
+            </div>
+          </div>
+          <p class="stars" aria-label="4 de 5 estrellas">★★★★☆</p>
+          <p>Los envíos son rápidos y el empaque también es sostenible, algo que muy pocas tiendas cuidan de verdad.</p>
+        </article>
+
+        <article class="testimonial">
+          <div class="testimonial__head">
+            <div class="testimonial__avatar"><img src="../img/icons/avatar-4.svg" alt="" width="52" height="52"></div>
+            <div>
+              <p class="testimonial__name">Julián P.</p>
+              <p class="testimonial__role">Cliente desde 2024</p>
+            </div>
+          </div>
+          <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+          <p>Empecé comprando un cepillo de bambú por curiosidad y ahora casi todo lo que uso viene de EcoMarket.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <p class="footer__brand">EcoMarket</p>
+        <p>Productos ecológicos para un consumo más consciente y responsable.</p>
+        <div class="footer__social">
+          <a href="#" class="icon-btn" aria-label="Instagram">IG</a>
+          <a href="#" class="icon-btn" aria-label="Facebook">FB</a>
+          <a href="#" class="icon-btn" aria-label="TikTok">TK</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>hola@ecomarket.com</li>
+          <li>+57 300 000 0000</li>
+          <li>Bucaramanga, Colombia</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Envíos y devoluciones</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="productos.html">Catálogo</a></li>
+          <li><a href="sobre-nosotros.html">Nuestra historia</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 EcoMarket. Todos los derechos reservados.</div>
+  </footer>
+</body>
+</html>
