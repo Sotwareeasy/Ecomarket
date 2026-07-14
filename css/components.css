@@ -1,0 +1,464 @@
+/* =========================================================
+   EcoMarket — components.css
+   Botones · Tarjetas · Inputs · Filtros · Paginación · Carrusel
+   ========================================================= */
+
+/* --- Botones --------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0.85rem 1.6rem;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: var(--fs-200);
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease), background 0.2s var(--ease);
+}
+
+.btn--primary {
+  background: var(--color-green-700);
+  color: var(--color-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn--primary:hover,
+.btn--primary:focus-visible {
+  background: var(--color-forest-800);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lift);
+}
+
+.btn--outline {
+  border: 2px solid var(--color-forest-900);
+  color: var(--color-forest-900);
+}
+
+.btn--outline:hover {
+  background: var(--color-forest-900);
+  color: var(--color-white);
+}
+
+.btn--small {
+  padding: 0.55rem 1.1rem;
+  font-size: var(--fs-100);
+}
+
+.btn--block { width: 100%; justify-content: center; }
+
+/* --- Hero content ------------------------------------------------------ */
+.hero__eyebrow { color: var(--color-green-700); }
+
+.hero__title {
+  font-size: clamp(2.2rem, 5vw, var(--fs-700));
+  margin-bottom: var(--space-3);
+}
+
+.hero__title em {
+  font-style: normal;
+  color: var(--color-green-700);
+}
+
+.hero__lead {
+  color: var(--color-ink-600);
+  margin-bottom: var(--space-4);
+  font-size: var(--fs-400);
+}
+
+.hero__media {
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lift);
+}
+
+.hero__media img { width: 100%; height: 100%; object-fit: cover; }
+
+/* --- Tarjeta de producto (home & catálogo) ----------------------------- */
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-green-200);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lift);
+}
+
+.card__media {
+  aspect-ratio: 4 / 3;
+  background: var(--color-sand-100);
+  padding: var(--space-3);
+}
+
+.card__media img { width: 100%; height: 100%; object-fit: contain; }
+
+.card__body {
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  flex: 1;
+}
+
+.card__title { font-size: var(--fs-400); }
+
+.card__desc {
+  color: var(--color-ink-600);
+  font-size: var(--fs-200);
+  flex: 1;
+}
+
+.card__price {
+  font-weight: 700;
+  color: var(--color-forest-900);
+  font-size: var(--fs-400);
+}
+
+.card__footer {
+  padding: 0 var(--space-3) var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+/* Etiqueta de stock */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-100);
+  font-weight: 700;
+  width: fit-content;
+}
+
+.badge--stock {
+  background: var(--color-green-200);
+  color: var(--color-forest-800);
+}
+
+.badge--out {
+  background: #f4d6d1;
+  color: var(--color-danger);
+}
+
+/* Botón de favoritos — usa :active para feedback inmediato sin JS */
+.fav-btn {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-green-200);
+  display: grid;
+  place-items: center;
+  color: var(--color-ink-600);
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease), transform 0.15s var(--ease);
+}
+
+.fav-btn:hover { border-color: var(--color-green-700); color: var(--color-green-700); }
+
+.fav-btn:active,
+.fav-btn:target {
+  color: #e0555f;
+  border-color: #e0555f;
+  transform: scale(1.15);
+}
+
+/* --- Buscador visual ---------------------------------------------------- */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: var(--color-white);
+  border: 1px solid var(--color-green-200);
+  border-radius: var(--radius-pill);
+  padding: 0.7rem 1.2rem;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: transparent;
+}
+
+/* --- Filtros (sidebar) -------------------------------------------------- */
+.filters__title {
+  font-size: var(--fs-300);
+  margin-bottom: var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-forest-900);
+}
+
+.filters__group {
+  padding-block: var(--space-3);
+  border-bottom: 1px solid var(--color-green-200);
+}
+
+.filters__group:last-of-type { border-bottom: none; }
+
+.filters__group h4 { margin-bottom: var(--space-2); font-size: var(--fs-300); }
+
+.filters__option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-block: 0.3rem;
+  font-size: var(--fs-200);
+  cursor: pointer;
+}
+
+.filters__option input[type="checkbox"],
+.filters__option input[type="radio"] {
+  accent-color: var(--color-green-700);
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.range-visual {
+  height: 6px;
+  border-radius: var(--radius-pill);
+  background: var(--color-green-200);
+  position: relative;
+  margin-top: var(--space-3);
+}
+
+.range-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0 40% 0 15%;
+  background: var(--color-green-700);
+  border-radius: var(--radius-pill);
+}
+
+.range-visual::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  width: 16px;
+  height: 16px;
+  background: var(--color-white);
+  border: 3px solid var(--color-green-700);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-100);
+  color: var(--color-ink-600);
+  margin-top: var(--space-2);
+}
+
+/* --- Paginación --------------------------------------------------------- */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-1);
+  margin-top: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.pagination a,
+.pagination span {
+  min-width: 2.6rem;
+  height: 2.6rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: 600;
+  border: 1px solid var(--color-green-200);
+  transition: background 0.2s var(--ease), color 0.2s var(--ease);
+}
+
+.pagination a:hover { background: var(--color-green-200); }
+
+.pagination .is-current {
+  background: var(--color-green-700);
+  color: var(--color-white);
+  border-color: var(--color-green-700);
+}
+
+.pagination .nav-arrow {
+  border-radius: var(--radius-pill);
+  padding-inline: var(--space-2);
+  width: auto;
+}
+
+/* --- Principios ecológicos (iconos) ------------------------------------- */
+.principle {
+  text-align: center;
+  padding: var(--space-4);
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+  border: 1px solid var(--color-green-200);
+}
+
+.principle__icon {
+  width: 64px;
+  height: 64px;
+  margin-inline: auto var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.principle h3 { font-size: var(--fs-400); margin-bottom: var(--space-1); }
+.principle p { color: var(--color-ink-600); font-size: var(--fs-200); margin-inline: auto; }
+
+/* --- Historia (flexbox) -------------------------------------------------- */
+.story__media {
+  border-radius: var(--radius-organic);
+  overflow: hidden;
+}
+
+.story__text .eyebrow { display: block; }
+.story__text p { margin-top: var(--space-2); color: var(--color-ink-600); }
+
+/* --- Carrusel de testimonios (100% CSS mediante scroll-snap) ------------ */
+.carousel {
+  display: flex;
+  gap: var(--space-4);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-block: var(--space-2) var(--space-4);
+  scrollbar-color: var(--color-green-700) var(--color-green-200);
+}
+
+.testimonial {
+  scroll-snap-align: start;
+  flex: 0 0 min(340px, 85%);
+  background: var(--color-white);
+  border: 1px solid var(--color-green-200);
+  border-radius: var(--radius-card);
+  padding: var(--space-4);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.testimonial:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: var(--shadow-lift);
+}
+
+.testimonial__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.testimonial__avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.testimonial__name { font-weight: 700; }
+.testimonial__role { font-size: var(--fs-100); color: var(--color-ink-600); }
+
+.stars {
+  color: var(--color-clay-500);
+  letter-spacing: 0.15em;
+  margin-bottom: var(--space-2);
+}
+
+.testimonial p:not(.testimonial__role) {
+  color: var(--color-ink-600);
+  font-size: var(--fs-200);
+}
+
+/* --- Formulario de contacto ----------------------------------------------- */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: var(--space-3);
+}
+
+.form-field label {
+  font-weight: 700;
+  font-size: var(--fs-200);
+}
+
+.form-field input,
+.form-field textarea {
+  border: 2px solid var(--color-green-200);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  background: var(--color-white);
+  transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+
+.form-field textarea { resize: vertical; min-height: 120px; }
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: var(--color-green-700);
+}
+
+/* Validación visual pura CSS */
+.form-field input:not(:placeholder-shown):valid,
+.form-field textarea:not(:placeholder-shown):valid {
+  border-color: var(--color-valid);
+  box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.15);
+}
+
+.form-field input:not(:placeholder-shown):invalid,
+.form-field textarea:not(:placeholder-shown):invalid {
+  border-color: var(--color-danger);
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.12);
+}
+
+.form-hint {
+  font-size: var(--fs-100);
+  color: var(--color-ink-600);
+}
+
+.form-field input:not(:placeholder-shown):invalid ~ .form-hint::after {
+  content: " — revisa este campo.";
+  color: var(--color-danger);
+}
+
+/* --- Redes sociales (contacto) -------------------------------------------- */
+.social-row {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.social-row a {
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-sand-100);
+  border: 1px solid var(--color-green-200);
+  transition: transform 0.2s var(--ease), background 0.2s var(--ease);
+}
+
+.social-row a:hover {
+  transform: scale(1.15);
+  background: var(--color-green-500);
+  color: var(--color-white);
+}
+
+/* --- Info-card (contacto / footer contacto) -------------------------------- */
+.info-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-green-200);
+  border-radius: var(--radius-card);
+  padding: var(--space-4);
+}
+
+.info-card + .info-card { margin-top: var(--space-3); }
+
+.info-card h4 { margin-bottom: 0.3rem; }
+.info-card p { color: var(--color-ink-600); font-size: var(--fs-200); }
