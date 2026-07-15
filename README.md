@@ -1,4 +1,4 @@
-# 🌱 EcoMarket
+#  EcoMarket
 
 Tienda en línea de productos ecológicos, reutilizables y sustentables, maquetada con **HTML5 semántico y CSS3 puro** (cero JavaScript, cero frameworks), siguiendo la metodología **BEM** para nombrar clases.
 
@@ -20,13 +20,12 @@ Toda la interactividad (menú móvil, favoritos, validación de formulario) se r
 ## 🚀 Instrucciones de visualización
 
 ### Opción 1 — Ver en línea (recomendado)
-Abre el sitio ya desplegado: **`[pega aquí tu URL de Vercel/Netlify una vez desplegado]`**
+Abre el sitio ya desplegado: ** **
 
 ### Opción 2 — Ejecutar localmente
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/<tu-usuario>/EcoMarket_NombreApellido.git
-   cd EcoMarket_NombreApellido
+   git clone https://github.com/Sotwareeasy/Ecomarket.git
    ```
 2. Abre `index.html` directamente en tu navegador, **o** sirve la carpeta con un servidor estático simple:
    ```bash
@@ -36,7 +35,7 @@ Abre el sitio ya desplegado: **`[pega aquí tu URL de Vercel/Netlify una vez des
    ```
 3. Navega a `http://localhost:5500`.
 
-No requiere instalación de dependencias, `npm install` ni build step: es HTML y CSS estático.
+
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -100,5 +99,4 @@ Enfoque **Mobile First** con puntos de quiebre en `620px`, `900px` y `1000px`:
 | Contacto | _(agregar imagen)_ | _(agregar imagen)_ |
 
 ## 🌿 Autor
-
-Proyecto desarrollado para el módulo de HTML + CSS — reemplaza esta línea con tu nombre completo.
+Fabian Uribe

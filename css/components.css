@@ -1,6 +1,6 @@
 /* =========================================================
-   EcoMarket — components.css
-   Botones · Tarjetas · Inputs · Filtros · Paginación · Carrusel
+  EcoMarket — components.css
+  Botones · Tarjetas · Inputs · Filtros · Paginación · Carrusel
    ========================================================= */
 
 /* --- Botones --------------------------------------------------------- */
@@ -450,6 +450,21 @@
   color: var(--color-white);
 }
 
+.map-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.map-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 /* --- Info-card (contacto / footer contacto) -------------------------------- */
 .info-card {
   background: var(--color-white);
