@@ -20,7 +20,7 @@ Toda la interactividad (menú móvil, favoritos, validación de formulario) se r
 ## 🚀 Instrucciones de visualización
 
 ### Opción 1 — Ver en línea (recomendado)
-Abre el sitio ya desplegado: ** **
+Abre el sitio ya desplegado: ** https://ecomarket-gamma.vercel.app/index.html**
 
 ### Opción 2 — Ejecutar localmente
 1. Clona el repositorio:
@@ -86,17 +86,6 @@ Enfoque **Mobile First** con puntos de quiebre en `620px`, `900px` y `1000px`:
 - **Catálogo**: 1 columna (móvil) → 2 columnas (tablet, `≥620px`) → 4 columnas (escritorio, `≥1000px`).
 - **Menú**: panel deslizable a pantalla completa en móvil (checkbox hack, sin JS) → barra horizontal en escritorio (`≥900px`).
 - **Historia (Sobre Nosotros)**: columna apilada en móvil → fila con Flexbox en pantallas ≥800px.
-
-## 📸 Capturas de pantalla
-
-> Agrega aquí las capturas de escritorio y móvil de cada vista tras el despliegue.
-
-| Vista | Escritorio | Móvil |
-|---|---|---|
-| Inicio | _(agregar imagen)_ | _(agregar imagen)_ |
-| Productos | _(agregar imagen)_ | _(agregar imagen)_ |
-| Sobre Nosotros | _(agregar imagen)_ | _(agregar imagen)_ |
-| Contacto | _(agregar imagen)_ | _(agregar imagen)_ |
 
 ## 🌿 Autor
 Fabian Uribe
