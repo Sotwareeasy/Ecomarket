@@ -1,0 +1,18 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración de plántulas nativas creciendo en macetas de barro">
+  <rect width="700" height="420" fill="#e8ecda"/>
+  <rect x="0" y="300" width="700" height="120" fill="#cba064" opacity="0.5"/>
+  <g transform="translate(140,260)">
+    <path d="M0 0 L100 0 L88 100 Q50 112 12 100 Z" fill="#cba064"/>
+    <path d="M50 0 C34 -30 34 -60 50 -85 C66 -60 66 -30 50 0 Z" fill="#27ae60"/>
+    <path d="M50 -20 C36 -35 20 -40 6 -38" stroke="#27ae60" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(330,280)">
+    <path d="M0 0 L90 0 L80 90 Q45 100 10 90 Z" fill="#e6c068"/>
+    <path d="M45 0 C30 -25 30 -50 45 -70 C60 -50 60 -25 45 0 Z" fill="#2ecc71"/>
+  </g>
+  <g transform="translate(500,255)">
+    <path d="M0 0 L100 0 L88 105 Q50 116 12 105 Z" fill="#cba064"/>
+    <path d="M50 0 C32 -30 30 -60 50 -90 C70 -60 68 -30 50 0 Z" fill="#27ae60"/>
+    <circle cx="72" cy="-40" r="9" fill="#e6c068"/>
+  </g>
+</svg>

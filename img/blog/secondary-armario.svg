@@ -1,0 +1,21 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración de prendas dobladas en tonos neutros sobre un estante de madera">
+  <rect width="700" height="420" fill="#f5f5dc"/>
+  <rect x="40" y="120" width="620" height="18" fill="#8a6538"/>
+  <rect x="40" y="300" width="620" height="18" fill="#8a6538"/>
+  <g transform="translate(90,150)">
+    <rect width="140" height="90" rx="10" fill="#e6c068"/>
+    <rect y="30" width="140" height="60" rx="10" fill="#cba064"/>
+  </g>
+  <g transform="translate(280,150)">
+    <rect width="140" height="90" rx="10" fill="#27ae60"/>
+    <rect y="30" width="140" height="60" rx="10" fill="#1f5a38"/>
+  </g>
+  <g transform="translate(470,150)">
+    <rect width="140" height="90" rx="10" fill="#ffffff" stroke="#cfe8cb" stroke-width="4"/>
+    <rect y="30" width="140" height="60" rx="10" fill="#cfe8cb"/>
+  </g>
+  <g transform="translate(300,340)">
+    <rect width="46" height="46" rx="6" fill="#cba064"/>
+    <path d="M23 0 C10 -20 8 -45 23 -60 C38 -45 36 -20 23 0 Z" fill="#2ecc71"/>
+  </g>
+</svg>
